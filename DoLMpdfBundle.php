@@ -5,7 +5,7 @@ namespace DoL\MpdfBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * MpdfBundle.
+ * DoLMpdfBundle.
  *
  * @author DarwinOnLine
  *
