@@ -64,7 +64,20 @@ class AppKernel extends Kernel
 Usage
 -----
 
-TODO : Usage
+### Get a Mpdf instance
+
+```php
+<?php
+  // Simple instance
+  $mpdf = $this->get('dol_mpdf.mpdf_service')->getMpdf();
+  
+  // With configuration
+  $mpdf = $this->get('dol_mpdf.mpdf_service')->getMpdf([
+    'mode' => 'utf-8',
+    'format' => 'A4',
+  ]);
+```
+
 
 Reporting an issue or a feature request
 ---------------------------------------
