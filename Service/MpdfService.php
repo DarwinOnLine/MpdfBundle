@@ -14,6 +14,21 @@ use Mpdf\Mpdf;
 class MpdfService
 {
     /**
+     * @var string
+     */
+    private $cacheDir;
+
+    /**
+     * MpdfService constructor.
+     *
+     * @param string $cacheDir
+     */
+    public function __construct($cacheDir)
+    {
+        $this->cacheDir = $cacheDir;
+    }
+
+    /**
      * @param array $constructorArgs
      *
      * @return Mpdf
@@ -22,6 +37,8 @@ class MpdfService
      */
     public function getMpdf($constructorArgs = array())
     {
-        return new Mpdf($constructorArgs);
+        return new Mpdf(array_merge(array(
+            'tempDir' => $this->cacheDir,
+        ), $constructorArgs));
     }
 }

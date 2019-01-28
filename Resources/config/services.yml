@@ -1,4 +1,5 @@
 services:
   dol_mpdf.mpdf_service:
     class: DoL\MpdfBundle\Service\MpdfService
+    arguments: ['%kernel.cache_dir%']
     public: true
