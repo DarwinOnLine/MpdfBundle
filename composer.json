@@ -1,0 +1,29 @@
+{
+  "name": "dol/mpdf-bundle",
+  "type": "symfony-bundle",
+  "description": "This bundle integrates mPDF library into your Symfony project.",
+  "keywords": ["mPDF", "PDF"],
+  "license": "MIT",
+  "homepage": "https://github.com/DarwinOnLine/MpdfBundle",
+  "authors": [
+    {
+      "name": "DarwinOnLine"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/DarwinOnLine/MpdfBundle/issues",
+    "source": "https://github.com/DarwinOnLine/MpdfBundle"
+  },
+  "require": {
+    "mpdf/mpdf": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5",
+    "friendsofphp/php-cs-fixer": "^2.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "DoL\\MpdfBundle\\": ""
+    }
+  }
+}

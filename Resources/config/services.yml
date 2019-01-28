@@ -1,0 +1,4 @@
+services:
+  dol_mpdf.mpdf:
+    class: DoL\MpdfBundle\Service\MpdfService
+    public: true
